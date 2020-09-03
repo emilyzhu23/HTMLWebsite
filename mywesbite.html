@@ -2,20 +2,169 @@
 <html lang = "en-US">
 <head>
   <title>Skiing</title>
+  <link rel="stylesheet" href="mywebsite.css">
 </head>
 
 <body>
-  <h1 style = "color: mediumpurple;">Skiing is a great sport but not a lot of people know exactly what it is</h1>
-  <h2 style = "color: cornflowerblue;">Let's learn the basics of skiing</h2>
-  <p style = "color: turquoise;" title = "It's an iconic sport">
-    Skiing is a sport where you compete by gliding on snow with skiis.
-    There are different types of skiing where different attributes are valued
+  <!-- Image Map -->
+
+  <ul>
+    <li class = "navigate"><a href="#Ski">What is Ski</a></li>
+    <li class = "navigate"><a href="#Slope">Slopes</a></li>
+    <li class = "navigate"><a href="#Fear">Fear</a></li>
+    <li class = "navigate"><a href="#Gear">Gear</a><li>
+    <li class = "navigate"><a href="#Basics">The Basics on How to Ski</a></li>
+  </ul>
+
+  <br />
+
+  <h1 id = "Top">Trying to Convince My Friends that Skiing is Fun</h1>
+
+  <!-- What is skiing? -->
+  <h2 id = "Ski">What is skiing?</h2>
+  <p style = "color: rgb(52, 185, 247);" title = "It's an iconic sport">
+    Skiing is a sport where you glide on snow on skiis. You get to go really fast :)
   </p>
-  <p style = "color: green;">For example, alpine skiing is where skiiers compete to see who can get ski down the hill the fastest</p>
-  <img src = "alpine.jpg" alt = "Alpine Skiing" width = "300" height = "200" />
+  <hr />
+  <p class = "paragraphblue">
+    The type of skiing that most people do is alpine skiing where skiiers compete to see who can get ski down the hill the fastest.
+  </p>
+  <pre>Look   at    how    much    fun    this    man    is    having: </pre>
+
+
+  <img src = "skiing1.jpg" alt = "Alpine Skiing" width = "300px" height = "200px"/>
+
   <br />
   <a href = "https://en.wikipedia.org/wiki/Alpine_skiing">Learn more about alpine skiing</a>
+  <hr />
 
+  <!-- The slopes -->
+  <h2 id = "Slope">Slopes?</h2>
+  <p>
+    Now there are of course various types of slopes, basically the snow you ski down, depending on your skill level.
+    If you're a beginner, it's likely you'll start out on the bunny slopes. These are <em> easier to navigate and approachable</em> because they're generally less steep and pretty short.
+    As your skill level increases, you'll be able to go for longer and steeper runs where <strong> you'll be able to go faster </strong>.
+  </p>
+  <h3>Ski Resorts in California:</h3>
+  <iframe src = "https://skicalifornia.org/best-california-ski-resorts/" title = "California Ski Resorts"></iframe>
+  <hr />
+
+  <!-- Fear -->
+  <h2 id = "Fear">Fear?</h2>
+  <p>
+    Okay. Sliding down an icy hill and having seeming no control over where you're going is scary. I can't deny that.
+    There's definitely a little bit of danger involved with skiing especially in the very beginning when it's hard to stop or turn and there are a lot of people.
+    But you get the hang of it and it becomes a lot less dangerous once you gain control over at least how to stop.
+  </p>
+  <p class = "paragraphblue"><q>For me, skiing is a physical necessity. I have a need for risk</q> – Jean-Marie Messier</p>
+  <hr />
+
+  <!-- Gear -->
+  <h2 id = "Gear">Gear?</h2>
+  <p>
+    It's going to be cold. Obviously. So snow pants and a heavy parka. One that's definitely very important is gloves/mittens. I personally prefer gloves because dexterity.
+    But either way, you need them. When you fall, you'll probably land somewhat on your hands so you definitely want to protect those from the snow. A helmet is also a neccesity for safety reasons.
+    Goggles or sunglasses are also a must. The glare from the snow can really damage your eyes and also there'll probably be cold wind you don't want in your eyes anyways as you ski down. I know
+    it might sound weird but I would suggest wearing sunscreen. The sun reflecting off the snow is pretty strong and you probably don't want a goggles tan line on your face.
+  </p>
+
+  <h3>Checklist of Gear:</h3>
+  <ol type="1">
+    <li class = "check">
+      <input type="checkbox" id="snowpants" name="snowpants">
+      <label for = "snowpants">Snow Pants</label>
+    </li>
+    <li class = "check">
+      <input type="checkbox" id="snowparka" name="snowparka">
+      <label for = "snowparka">Parka</label>
+    </li>
+    <li class = "check">
+      <input type="checkbox" id="goggles" name="goggles">
+      <label for = "goggles">Goggles</label>
+    </li>
+    <li class = "check">
+      <input type="checkbox" id="gloves" name="gloves">
+      <label for = "gloves">Gloves</label>
+    </li>
+    <li class = "check">
+      <input type="checkbox" id="helmet" name="helmet">
+      <label for = "helmet">Helmet</label>
+    </li>
+    <li class = "check">
+      <input type="checkbox" id="sunscreen" name="sunscreen">
+      <label for = "sunscreen">Sunscreen</label>
+    </li>
+    <li class = "check">
+      <input type="checkbox" id="skis" name="skis">
+      <label for = "skis">Skis</label>
+    </li>
+    <li class = "check">
+      <input type="checkbox" id="boots" name="boots">
+      <label for = "boots">Ski Boots</label>
+    </li>
+    <li class = "check">
+      <input type="checkbox" id="poles" name="poles">
+      <label for = "poles">Poles</label>
+    </li>
+  </ol>
+
+  <hr />
+
+  <!-- Add how to ski basics -->
+  <h2 style = "border: 2px solid rgb(138, 231, 235); text-align: center;" id = "Basics">How To Ski: The Basic Basics</h2>
+  <button onclick="document.location='https://www.youtube.com/watch?v=n-UBie4Ioqo'">Watch This Video First</button>
+  <br />
+
+  <table style = "width: 75%">
+    <caption>Ski Skills</caption>
+    <tr>
+      <th>Skill</th>
+      <th>Description</th>
+      <th>Video</th>
+    </tr>
+    <tr>
+      <td>Ski Gear</td>
+      <td>How to put on ski boots; How to put on and take off skis; Ski Parts</td>
+      <td>
+        <button class = "tutorial" onclick="document.location='https://youtu.be/LaF1tT1l7c0'">Watch Here</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Basic Moves On Snow</td>
+      <td>How to glide on snow; How to Walk; Getting Up</td>
+      <td>
+        <button class = "tutorial" onclick="document.location='https://youtu.be/l6AG5WLUaNo'">Watch Here</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Chairlifts</td>
+      <td>How to Get On and Off Chairlifts</td>
+      <td>
+        <button class = "tutorial" onclick="document.location='https://www.youtube.com/watch?v=ETYe-Kg1JJs'">Watch Here</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Basic Stance</td>
+      <td>How to Stand with Skis</td>
+      <td>
+        <button class = "tutorial" onclick="document.location='https://youtu.be/xpS7B9FN9Q4'">Watch Here</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Basic Moves Pt.2</td>
+      <td>How to Turn and Stop</td>
+      <td>
+        <button class = "tutorial" onclick="document.location='https://youtu.be/zAQVuC1Q4mw'">Watch Here</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Turning</td>
+      <td>How to Turn (In Depth)</td>
+      <td>
+        <button class = "tutorial" onclick="document.location='https://youtu.be/yg75ee5QLMc'">Watch Here</button>
+      </td>
+    </tr>
+  </table>
 
 </body>
 </html>

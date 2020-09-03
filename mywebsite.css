@@ -1,0 +1,138 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+
+  background-image: url('backgroundimg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: rgb(215, 247, 247);
+  font-size: 60 px;
+  text-align: center;
+}
+
+h2 {
+  color: cornflowerblue;
+  font-size: 150%
+}
+
+h3 {
+  color: white;
+  text-indent: 10px;
+}
+
+p {
+  color: rgb(2, 140, 186);
+}
+
+.paragraphblue {
+  color: steelblue;
+}
+
+pre {
+  color: slategray;
+  font-family: Helvetica;
+}
+a:link {
+  color: rgb(10, 156, 161);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(5, 132, 179);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(149, 171, 237);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+button.tutorial {
+  background-color: white;
+  border: 2px solid rgb(128, 166, 255);
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+button {
+  background-color: white;
+  border: 2px solid rgb(128, 166, 255);
+  color: black;
+  padding: 14px 40px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 8px;
+  margin: auto; /* Automatically calculates margins to center */
+  display: block; /* Displays an element as a block element; starts on a new line, and takes up the whole width */
+}
+
+button:hover{
+  background-color: rgb(128, 166, 255);
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(192, 237, 230);
+}
+
+li.navigate {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(235, 245, 243);
+}
+
+iframe {
+  border: 2px solid rgb(173, 173, 173);
+  width: 500px;
+  height: 300px;
+}
+
+li.check {
+  float: center;
+  color: rgb(85, 184, 237);
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  padding: 5px;
+  color: rgb(65, 91, 171);
+}
+
+th {
+  text-align: left;
+}
+
+caption {
+  color: rgb(52, 120, 112);
+  font-size: 120%
+}
