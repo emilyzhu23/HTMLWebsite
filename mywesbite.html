@@ -3,9 +3,44 @@
 <head>
   <title>Skiing</title>
   <link rel="stylesheet" href="mywebsite.css">
+  <meta charset="UTF-8">
+  <meta name="author" content="Emily" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+  </script>
   <!-- Image Map -->
 
   <ul>
@@ -32,7 +67,12 @@
   <pre>Look   at    how    much    fun    this    man    is    having: </pre>
 
 
-  <img src = "skiing1.jpg" alt = "Alpine Skiing" width = "300px" height = "200px"/>
+  <img src = "skiing1.jpg" alt = "Alpine Skiing" id = "imgnormal" usemap = "#skimap" />
+  <map name = "skimap">
+    <area shape = "rect" coords = "184,188, 366,208" alt = "Skis" href = "https://www.mec.ca/en/explore/how-to-choose-downhill-skis"/>
+    <area shape = "rect" coords = "338,67, 369,80" alt = "Goggles" href = "https://www.rei.com/learn/expert-advice/goggles.html"/>
+    <area shape = "poly" coords = "386,168, 384,177, 548,192" alt = "Poles" href = "https://www.thesnowcentre.com/snowsure/news/what-are-ski-poles-for"/>
+  </map>
 
   <br />
   <a href = "https://en.wikipedia.org/wiki/Alpine_skiing">Learn more about alpine skiing</a>
@@ -56,7 +96,7 @@
     There's definitely a little bit of danger involved with skiing especially in the very beginning when it's hard to stop or turn and there are a lot of people.
     But you get the hang of it and it becomes a lot less dangerous once you gain control over at least how to stop.
   </p>
-  <p class = "paragraphblue"><q>For me, skiing is a physical necessity. I have a need for risk</q> – Jean-Marie Messier</p>
+  <p class = "paragraphblue"><q>For me, skiing is a physical necessity. I have a need for risk</q> – Jean-Marie Messier &#128153;</p>
   <hr />
 
   <!-- Gear -->
@@ -65,7 +105,7 @@
     It's going to be cold. Obviously. So snow pants and a heavy parka. One that's definitely very important is gloves/mittens. I personally prefer gloves because dexterity.
     But either way, you need them. When you fall, you'll probably land somewhat on your hands so you definitely want to protect those from the snow. A helmet is also a neccesity for safety reasons.
     Goggles or sunglasses are also a must. The glare from the snow can really damage your eyes and also there'll probably be cold wind you don't want in your eyes anyways as you ski down. I know
-    it might sound weird but I would suggest wearing sunscreen. The sun reflecting off the snow is pretty strong and you probably don't want a goggles tan line on your face.
+    it might sound weird but I would suggest wearing sunscreen. The sun reflecting off the snow is pretty strong &#38; you probably don't want a goggles tan line on your face.
   </p>
 
   <h3>Checklist of Gear:</h3>
@@ -165,6 +205,61 @@
       </td>
     </tr>
   </table>
+
+  <br />
+  <br />
+
+  <!-- Container for the image gallery -->
+
+  <div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class = "numbertext">1 / 4</div>
+        <img src = "skigallery1.jpg" alt="Skiing" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+        <img src="skigallery2.jpg" alt="Ski Lift" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+        <img src="skigallery3.jpg" alt="Ski Beginner" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+        <img src="skigallery4.jpg" alt="Ski Sky" />
+    </div>
+
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="skigallery1.jpg" onclick="currentSlide(1)" alt="Skiing" />
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="skigallery2.jpg" onclick="currentSlide(2)" alt="Ski Lift" />
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="skigallery3.jpg" onclick="currentSlide(3)" alt="Ski Beginner" />
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="skigallery4.jpg" onclick="currentSlide(4)" alt="Ski Sky" />
+      </div>
+    </div>
+
+  </div>
 
 </body>
 </html>
